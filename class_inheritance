@@ -1,0 +1,19 @@
+#class Inheritence using the example of a pet class that is inherited in the dog class
+class Pet:
+  def __init__(self, name):
+    self.name = name
+  
+  def speak(self):
+    if self.name == "dog":
+      return "I bark!"
+    elif self.name == "cat":
+      return "Meow!"
+      
+
+
+class dog(Pet):
+  pass
+
+dog = dog("dog")
+bark = dog.speak()
+print(bark)
